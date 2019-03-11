@@ -1,31 +1,14 @@
-.container {
-
+* {
+    font-family: sofia-pro,sans-serif;
 }
-
-h1 {
-    font-weight: 500;
-    font-size: 31px;
-}
-
-p {
-    font-weight: 500;
-    font-size: 18px;
-}
+/* DESKTOP */
+@media (max-width: 1680px) {
 
 #logo {
     max-width: 100%;
     object-fit: contain;
 }
 
-#content {
-  
-}
-
-.ar-screen-01 {
-    width: 537px;
-    height: 537px;
-    object-fit: contain;
-}
 .destination-01 {
     width: 348px;
     height: 348px;
@@ -86,6 +69,7 @@ p {
     background-color: #f3f3f3;
     height: 100vh;
     width: 100vw;
+    display: flex;
 }
 
 .about-section #case-study-btn{
@@ -98,13 +82,33 @@ p {
 }
 
 .about-section h1 {
-    width: 380px;
-    height: 84px; 
+    width: 218.5px;
+    height: 30px; 
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .about-section p {
-    width: 380px;
-    height: 132px;
+    width: 442px;
+    height: 90px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#about-content{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+} 
+.ar-screen-01 {
+    width: 437px;
+    height: 437px;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .how-it-works {
@@ -120,12 +124,14 @@ p {
 
 .how-it-works p {
     width: 348px;
-    height: 100%;
     font-size: 18px;
 }
 
 .how-content {
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
 }
 
 .video-section {
@@ -148,3 +154,341 @@ p {
      color: #131313;
      font-size: 18px;
  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .logo {
+        width: 367px;
+        height: 87px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    
+    
+    .corner-piece-section-1 { 
+        width: 194.2px;
+        height: 194px;
+        object-fit: contain;
+        position: relative;
+        padding: 0 auto;
+      }
+    
+    .landing-page {
+        background-color: #4262FF;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing-page h2 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 25px;
+        margin-top: 105px;
+    }
+    
+    .about-section {
+        background-color: #f3f3f3;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+    
+    .about-section #case-study-btn{
+        width: 159.5px;
+        height: 47px;
+        border-radius: 10px;
+        background-color: #4262ff;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    
+    .about-section h1 {
+        width: 348px;
+        height: 42px; 
+        font-size: 34px;
+    }
+    
+    .about-section p {
+        width: 348px;
+        height: 104px;
+        font-size: 18px;
+    }
+
+    .ar-screen-01 {
+        width: 348px;
+        height: 348px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    #about-content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    } 
+    
+    .how-it-works {
+        background-color: #F3f3f3;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .how-it-works h3 {
+        font-size: 23px;
+        width: 348px;
+    }
+    
+    .how-it-works p {
+        width: 348px;
+        font-size: 18px;
+    }
+    
+    .how-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .destination-01 {
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .ar-screen{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .scan-screen{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    .iphone-isometric{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    .video-section {
+        background-color: #131313;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .video-section p {
+        width: 380px;
+        height: 132px;
+    }
+    
+    .purhcase-section {
+        background-color: #FFCE43;
+        height: 100vh;
+        width: 100vw;
+    }
+     .purhcase-section p {
+         color: #131313;
+         font-size: 18px;
+     }
+    }
+
+/* MOBILE */
+@media (max-width: 414px) {
+    
+    .logo {
+        width: 244px;
+        height: 58px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    
+    .iphone-isometric{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .corner-piece-section-1 { 
+        width: 194.2px;
+        height: 194px;
+        object-fit: contain;
+        position: relative;
+        padding: 0 auto;
+      }
+    
+    .landing-page {
+        background-color: #4262FF;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing-page h2 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 105px;
+        font-weight: 400;
+    }
+    
+    .about-section {
+        background-color: #f3f3f3;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+
+    #about-content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    } 
+
+    .about-section #case-study-btn{
+        width: 159.5px;
+        height: 47px;
+        border-radius: 10px;
+        background-color: #4262ff;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    .about-section h1 {
+        width: 276.5px;
+        height: 30px; 
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .about-section p {
+        width: 276.5px;
+        height: 70px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .ar-screen-01 {
+        width: 220px;
+        height: 220px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    
+    .how-it-works {
+        background-color: #F3f3f3;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .how-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .how-it-works h1 {
+        font-size: 18px;
+        font-weight: 400;
+        width: 105px;
+    }
+    
+    .how-it-works h3 {
+        font-size: 23px;
+        font-weight: 400;
+        width: 276.6px;
+    }
+    
+    .how-it-works p {
+        width: 276.6px;
+        font-size: 16px;
+    }
+
+    .destination-01 {
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .ar-screen{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .scan-screen{
+        width: 276.5px;
+        height: 276.5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    .video-section {
+        background-color: #131313;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .video-section p {
+        width: 380px;
+        height: 132px;
+    }
+    
+    .purhcase-section {
+        background-color: #FFCE43;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .purhcase-section h1 {
+        color: #131313;
+        width: 276.5px;
+        height: 84px; 
+        font-size: 25px;
+        font-weight: 400;
+
+    }
+     .purhcase-section p {
+        color: #131313;
+        font-size: 18px;
+        width: 276.5px;
+        height: 130px; 
+        font-size: 16px;
+        margin-top: 40px;
+     }
+
+    }
