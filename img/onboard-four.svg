@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="235" height="235" viewBox="0 0 235 235">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="48.93" height="48.93" x="104.739" y="116.852" stroke="#4262FF" stroke-width="2" rx="2"/>
+        <rect width="48.93" height="48.93" x="81.331" y="139.134" stroke="#4262FF" stroke-width="2" rx="2"/>
+        <path stroke="#4262FF" stroke-linecap="square" stroke-width="2" d="M82.296 139.104l23-22M129.704 140l22.402-21.428M82.595 187.21l22.402-21.427M129.704 188.21L153 166"/>
+        <path fill="#4262FF" d="M125 87.238l-6.762 9.017a.5.5 0 0 1-.8 0l-6.762-9.017H86.824a4 4 0 0 1-4-4V46.674a4 4 0 0 1 4-4h62.029a4 4 0 0 1 4 4v36.564a4 4 0 0 1-4 4H125z"/>
+        <text fill="#FFF" font-family="HarmoniaSansPro-SemiBd, Harmonia Sans Pro" font-size="13" font-weight="500" transform="translate(82 42.206)">
+            <tspan x="12.984" y="27.374">Tap me</tspan>
+        </text>
+        <g stroke="#4262FF" stroke-linecap="round" stroke-width="2">
+            <path d="M170.7 196.895h-13M170.7 183.895v13"/>
+        </g>
+        <g stroke="#4262FF" stroke-linecap="round" stroke-width="2">
+            <path d="M63.453 108.635h13M63.279 121.635v-13M63.461 196.624h13M63.279 196.624v-13M170.676 109.3v13M157.676 109.3h13"/>
+        </g>
+    </g>
+</svg>

@@ -5,14 +5,20 @@
 
 p {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2160 - 320)));
-    font-size: calc(19px + (25 - 19) * ((100vw - 1024px) / (2160 - 1024)));
+    font-size: calc(18px + (25 - 18) * ((100vw - 1024px) / (2160 - 1024)));
     line-height: 1.56;
+    width: 348px;
+    margin-bottom: 40px;
 }
 
 h1 {
     font-size: calc(25px + (34 - 25) * ((100vw - 320px) / (2160 - 320)));
 }
 
+iframe {
+    max-width: calc(278px + (912 - 278) * ((100vw - 320px) / (2160 - 320)));
+    max-height: calc(161px + (586 - 161) * ((100vw - 320px) / (2160 - 320)));
+}
 /* LANDING */
 
 .logo {
@@ -38,8 +44,6 @@ h1 {
     font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (2160 - 320)));
 }
 
- /* ABOUT */
-
 .launch-screen {
     max-width: calc(105px + (237 - 105) * ((100vw - 320px) / (2160 - 320)));
     object-fit: contain;
@@ -47,15 +51,35 @@ h1 {
     width: 100%;
 }
 
+ /* ABOUT */
+
 .about-section {
     background-color: #f3f3f3;
     height: 100vh; 
     width: 100vw;
     display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
-#about-content {
+.about-section p{
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    margin-bottom: 40px;
+}
+
+
+#about-columns {
     display: grid;
+    grid-template-columns: none;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .about-section #case-study-btn{
@@ -72,22 +96,42 @@ h1 {
 
 .how-section {
     background-color: #F3f3f3;
-    height: 100vh;
-    width: 100vw;
     display: grid;
 }
 
 #how-content {
     display: grid;
+    margin-bottom:90px;
 }
 
-.destination-01 {
-    max-width: calc(560px + (637 - 560) * ((100vw - 320px) / (2160 - 320)));
-    object-fit: contain;
+#how-content h1 {
+    display: grid;
+    justify-content: center;
+}
+
+#onboard {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#onboard img {
+    max-width: calc(175px + (200 - 175) * ((100vw - 320px) / (2160 - 320)));
     height: auto;
     width: 100%;
+    object-fit: contain;
 }
 
+.how-columns {
+    display: grid;
+    grid-template-columns: none;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
 /* VIDEO */
 
 .video-section {
@@ -99,6 +143,10 @@ h1 {
 
 #video-content {
     display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 /* PURCHASE */
@@ -114,15 +162,41 @@ h1 {
  }
 
 /* DESKTOP */
-@media screen and (max-width: 2160px) {
+@media screen and (max-width: 2160px) { 
+
+    p {
+        font-size: 18px;
+        
+    }
+        
+    .how-section {
+        background-color: #F3f3f3;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .how-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #about-columns {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 
 }
 
 /* TABLET */
 @media screen and (max-width: 1024px) {
+
   /* ABOUT */
 
-  #about-content {
+  #about-columns {
+    grid-template-columns: none;
+    text-align: center;
+}
+
+  .about-section {
     align-items: center;
     justify-items: center;
     grid-gap: 1em;
@@ -139,7 +213,6 @@ h1 {
     height: auto;
     line-height: 1.56;
     text-align: center;
-
 }
 
   /* HOW */
@@ -150,6 +223,12 @@ h1 {
     grid-gap: 1em;
     align-content: center;
     justify-content: center;
+}
+
+.how-section {
+    background-color: #F3f3f3;
+    width: 100vw;
+    height: auto;
 }
 
 .how-section h1 {
@@ -165,6 +244,20 @@ h1 {
     line-height: 1.56;
     text-align: center;
 }
+
+.how-columns {
+    grid-template-columns: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1em;
+    align-content: center;
+    justify-content: center;
+    /* overflow: auto;
+    white-space: nowrap; */
+}
+
+
 
 /* VIDEO */
 
@@ -203,7 +296,12 @@ h1 {
 
     /* ABOUT */
 
-    #about-content {
+    #about-columns {
+        grid-template-columns: none;
+        text-align: center;
+    }
+
+    #about-section {
         align-items: center;
         justify-items: center;
         grid-gap: 1em;
@@ -213,6 +311,7 @@ h1 {
     
     .about-section h1 {
         height: auto;
+        margin-bottom: 40px;
     }
     
     .about-section p {
@@ -231,6 +330,12 @@ h1 {
         grid-gap: 1em;
         align-content: center;
         justify-content: center;
+    } 
+
+    .how-section {
+        background-color: #F3f3f3;
+        width: 100vw;
+        height: auto;
     }
 
     .how-section h1 {
@@ -251,7 +356,7 @@ h1 {
         line-height: 1.56;
         text-align: center;
     }
-  
+
     /* VIDEO */
 
 
