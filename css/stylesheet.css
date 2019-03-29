@@ -1,29 +1,37 @@
 * {
     font-family: sofia-pro,sans-serif;
     font-weight: 400;
+    scroll-snap-align: center;
+    line-height: 1.56;
 }
 
 p {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2160 - 320)));
     font-size: calc(18px + (25 - 18) * ((100vw - 1024px) / (2160 - 1024)));
-    line-height: 1.56;
-    width: 348px;
-    margin-bottom: 40px;
+    max-width: calc(276.5px + (348 - 276.5) * ((100vw - 320px) / (2160 - 320)));
 }
 
-h1 {
-    font-size: calc(25px + (34 - 25) * ((100vw - 320px) / (2160 - 320)));
+h2 {
+    font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (2160 - 320)));
+    max-width: calc(276.5px + (348 - 276.5) * ((100vw - 320px) / (2160 - 320)));
+    margin-bottom: 30px;
 }
 
 iframe {
     max-width: calc(278px + (912 - 278) * ((100vw - 320px) / (2160 - 320)));
     max-height: calc(161px + (586 - 161) * ((100vw - 320px) / (2160 - 320)));
 }
+
+body img {
+    margin-bottom: 30px;
+}
+
 /* LANDING */
 
 .logo {
     max-width: calc(244px + (379 - 244) * ((100vw - 320px) / (2160 - 320)));
     object-fit: contain;
+    margin: 0;
 }
 
 .landing-page {
@@ -42,6 +50,7 @@ iframe {
     color: #ffffff;
     margin-top: 105px;
     font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (2160 - 320)));
+    max-width: 100%;
 }
 
 .launch-screen {
@@ -50,6 +59,13 @@ iframe {
     height: auto;
     width: 100%;
 }
+
+/* .landing-shape-3 {
+    width: 235px;
+    height: 235px;
+    object-fit: contain;
+    position: absolute;
+} */
 
  /* ABOUT */
 
@@ -71,7 +87,6 @@ iframe {
 .about-section h1 {
     margin-bottom: 40px;
 }
-
 
 #about-columns {
     display: grid;
@@ -105,8 +120,17 @@ iframe {
 }
 
 #how-content h1 {
+    padding-top: 92px;
     display: grid;
     justify-content: center;
+}
+
+.how-section p {
+    margin-bottom: 40px;
+}
+
+.how-section h2 {
+    margin-bottom: 40px;
 }
 
 #onboard {
@@ -132,6 +156,7 @@ iframe {
     align-content: center;
     justify-content: center;
 }
+
 /* VIDEO */
 
 .video-section {
@@ -150,15 +175,19 @@ iframe {
 }
 
 /* PURCHASE */
+
 .purhcase-section {
     background-color: #FFCE43;
     height: 100vh;
     width: 100vw;
-    display: grid;
 }
 
 #purchase-content {
     display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
  }
 
 /* DESKTOP */
@@ -166,7 +195,6 @@ iframe {
 
     p {
         font-size: 18px;
-        
     }
         
     .how-section {
@@ -309,10 +337,10 @@ iframe {
         justify-content: center;
     }
     
-    .about-section h1 {
+    /* .about-section h1 {
         height: auto;
         margin-bottom: 40px;
-    }
+    } */
     
     .about-section p {
         width: 276.5px;
@@ -338,15 +366,15 @@ iframe {
         height: auto;
     }
 
-    .how-section h1 {
+    /* .how-section h1 {
         height: auto;
         margin-bottom: 20px;
-    }
+    } */
     
     .how-section h2 {
         height: auto;
         width: 276.47px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         text-align: center;
     }
     
