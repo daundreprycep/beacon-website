@@ -1,18 +1,21 @@
 * {
     font-family: sofia-pro,sans-serif;
     font-weight: 400;
-    scroll-snap-align: center;
     line-height: 1.56;
+}
+
+body {
+    scroll-snap-align: start;
 }
 
 p {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (2160 - 320)));
     font-size: calc(18px + (25 - 18) * ((100vw - 1024px) / (2160 - 1024)));
-    max-width: calc(276.5px + (348 - 276.5) * ((100vw - 320px) / (2160 - 320)));
+    max-width: calc(276.5px + (330 - 276.5) * ((100vw - 320px) / (2160 - 320)));
 }
 
 h2 {
-    font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (2160 - 320)));
+    font-size: calc(25px + (25 - 25) * ((100vw - 320px) / (2160 - 320)));
     max-width: calc(276.5px + (348 - 276.5) * ((100vw - 320px) / (2160 - 320)));
     margin-bottom: 30px;
 }
@@ -58,6 +61,14 @@ body img {
     object-fit: contain;
     height: auto;
     width: 100%;
+}
+
+#landing-content img{
+    width: auto;
+    height: 512px;
+    object-fit: contain;
+    position: absolute;
+    z-index: 10;
 }
 
 /* .landing-shape-3 {
@@ -173,13 +184,25 @@ body img {
     align-content: center;
     justify-content: center;
 }
-
-/* PURCHASE */
+#video-content h1 {
+    padding-bottom: 92px;
+    display: grid;
+    justify-content: center;
+    color: #f3f3f3;
+}
+/* PURCHASE */  
 
 .purhcase-section {
     background-color: #FFCE43;
     height: 100vh;
     width: 100vw;
+    display: grid;
+}
+
+.purhcase-section h2 {
+    width: 348px;
+    height: auto;
+    margin-bottom: 40px;
 }
 
 #purchase-content {
@@ -189,6 +212,8 @@ body img {
     align-content: center;
     justify-content: center;
  }
+
+ 
 
 /* DESKTOP */
 @media screen and (max-width: 2160px) { 
@@ -205,6 +230,7 @@ body img {
 
     .how-columns {
         grid-template-columns: repeat(3, 1fr);
+        /* grid-column-gap: 1em; */
     }
 
     #about-columns {
@@ -263,7 +289,8 @@ body img {
     height: auto;
 }
 
-.how-section h3 {
+.how-section h2 {
+    text-align: center;
 }
 
 .how-section p {
@@ -286,7 +313,6 @@ body img {
 }
 
 
-
 /* VIDEO */
 
 
@@ -298,6 +324,7 @@ body img {
     grid-gap: 1em;
     align-content: center;
     justify-content: center;
+    text-align: center;
 }
 
 .purhcase-section h1 {
@@ -391,6 +418,7 @@ body img {
     /* PURCHASE */
 
     #purchase-content {
+        display: grid;
         align-items: center;
         justify-items: center;
         grid-gap: 1em;
@@ -398,7 +426,7 @@ body img {
         justify-content: center;
     }
 
-    .purhcase-section h1 {
+    .purhcase-section h2 {
         width: 276.5px;
         height: auto;
         text-align: center;
