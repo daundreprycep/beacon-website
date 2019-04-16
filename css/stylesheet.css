@@ -108,7 +108,7 @@ body img {
     justify-content: center;
 }
 
-.about-section #case-study-btn{
+.about-section #case-study-btn {
     width: 159.5px;
     height: 47px;
     border-radius: 10px;
@@ -184,12 +184,14 @@ body img {
     align-content: center;
     justify-content: center;
 }
+
 #video-content h1 {
     padding-bottom: 92px;
     display: grid;
     justify-content: center;
     color: #f3f3f3;
 }
+
 /* PURCHASE */  
 
 .purhcase-section {
