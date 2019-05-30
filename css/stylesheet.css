@@ -29,6 +29,10 @@ body img {
     margin-bottom: 30px;
 }
 
+#case-study-btn {
+    cursor: pointer; 
+}
+
 /* LANDING */
 
 .logo {
